@@ -9,10 +9,10 @@ class PagesController < ApplicationController
   end
 
   def create
-    Cat.create(:name=> params[:name])
-    Todo.create(:tasks=> params[:tasks],
+    Cat.create(:name => params[:name])
+    Todo.create(:tasks => params[:tasks],
                  :finished => params[:finished])
-    User.create(:username=> params[:username],
+    User.create(:username => params[:username],
                 :email => params[:email],
                 :age => params[:age])
     redirect_to '/'

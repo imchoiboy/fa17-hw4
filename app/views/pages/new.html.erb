@@ -1,6 +1,6 @@
 <%= form_tag cats_create_path do %>
 
-    <div>
+<div>
     <%= label_tag(:name, "Name: ") %>
     <%= text_field_tag(:name) %>
 
@@ -8,6 +8,21 @@
 
     <%= submit_tag("Create Cat") %>
 
+
+</div>
+    <div>
+    <%= label_tag(:tasks, "Task: ") %>
+    <%= text_field_tag(:tasks) %>
+
+
+    <%= label_tag(:finished, "Finished: ") %>
+    <%= text_field_tag(:finished) %>
+
+
+    <%= submit_tag("Create Todo") %>
+
+
+</div>
     <div>
 
     <%= label_tag(:username, "Username: ") %>
@@ -24,13 +39,4 @@
 
     <%= submit_tag("Create User") %>
     </div>
-
-    <%= form_for @todos do |f| %>
-        <%= f.label :tasks %>:
-        <%= f.text_field :tasks %><br />
-
-        <%= f.label :finished %>:
-        <%= f.text_field :finished %><br />
-
-    <%= f.submit %>
 <% end %>
