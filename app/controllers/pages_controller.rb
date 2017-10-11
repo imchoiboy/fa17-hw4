@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   end
 
   def create
-    c = Cat.create(:name => params[:name])
+    Cat.create(:name => params[:name])
     Todo.create(:tasks => params[:tasks],
                  :finished => params[:finished])
     User.create(:username => params[:username],

@@ -2,8 +2,8 @@
 
 one:
   tasks: MyString
-  finished: false
+  finished: MyString
 
 two:
   tasks: MyString
-  finished: false
+  finished: MyString
